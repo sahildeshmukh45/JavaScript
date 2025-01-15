@@ -11,6 +11,7 @@ console.log(numbers instanceof Array);   // output: true
 console.log(numbers.length);   // output: 5
 numbers.push(6);   // add an element at the end
 console.log(numbers);   // output: [1,2,3,4,5,6]
+numbers.unshift(0);   // add an element at the beginning
 numbers.pop();   // remove an element from the end
 console.log(numbers);   // output: [1,2,3,4,5]
 
