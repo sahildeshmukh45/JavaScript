@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Bag</title>
+  <link rel="stylesheet" href="/practiceSet/css/myntraBag.css">
+</head>
+<body>
+
+  <button class="bagButton" 
+  onclick = "cartQuantity += 1; 
+  document.querySelector('#cart-summary').innerText=`Your Bag has ${cartQuantity} Items`;">
+  Add to bag
+  </button>
+
+  <button class="wishlistButton" 
+   onclick="alert('move to wishlist')">
+   Move To wishlist
+  </button>
+
+  <button class="offerButton"
+  onclick="alert('1+1 offer added')">
+  Add 1+1 offer
+</button>
+
+<button class="removeButton"
+onclick="cartQuantity  -= 1;
+document.querySelector(`#cart-summary`).innerText=`Your Bag has ${cartQuantity} Items`;">
+Remove from bag 
+</button>
+
+  
+<h1 id="cart-summary"></h1>
+
+<script>
+
+let cartQuantity=0;
+// it will select the id and display the text for id we use # and for class we use .
+document.querySelector('#cart-summary').innerText=`Your Bag has ${cartQuantity} Items`;
+</script>
+</body>
+</html>

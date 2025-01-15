@@ -1,0 +1,14 @@
+.bagButton{
+  background-color: lightgreen;
+  display: inline-block;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.wishlistButton{
+  border: 2px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  padding-left: 35px;
+  padding-right: 35px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // json is a format for storing and transporting data and js is data structure
+    let product={
+      name :'T-shirt',
+      price : 789,
+      rating : {
+        start : 4.5/5,
+        noOfReviews : 498,
+      },
+    };
+    console.log(typeof product);
+    console.log(product);
+    let str=JSON.stringify(product);  // for converting object to string
+    console.log(typeof str);
+    console.log;
+    
+    let newProduct=JSON.parse(str);  // for converting string to object
+    console.log(typeof newProduct);
+
+
+
+    localStorage.setItem('name','sahil');   // for storing data in local storage  it will save permanently
+    localStorage.setItem('product',str); 
+
+
+    console.log(localStorage.getItem('name'));  // for getting data from local storage./
+    console.log(localStorage.getItem('product')); 
+
+    let product2=JSON.parse(localstorage.getItem('product')); // for converting string to object
+    console.log(product2);
+
+    // localStorag.removeItem('name');             // for removing particular data from local storage
+    // localsotrage.clear();                       // for removing all data from local storage
+
+      
+    
+  </script>
+</body>
+</html>
